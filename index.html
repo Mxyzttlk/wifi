@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagine pe tot ecranul</title>
+    <style>
+        /* Eliminăm marginile și umplutura implicite ale paginii */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Ascunde barele de derulare, dacă imaginea depășește ecranul */
+            background-color: #000; /* Fundal negru în caz de încărcare lentă */
+        }
+
+        /* Stilizăm imaginea să acopere întreaga pagină */
+        .full-screen-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asigură că imaginea umple tot spațiul păstrându-și proporțiile (poate tăia ușor din margini) */
+            /* Dacă vrei să se vadă TOATĂ imaginea fără să fie tăiată, înlocuiește 'cover' cu 'contain' */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="CduyK.jpeg" alt="Imagine ecran complet" class="full-screen-img">
+
+</body>
+</html>
